@@ -1,6 +1,6 @@
 {
 	"name": "yarpp-block",
-	"version": "2.4.0",
+	"version": "2.5.0",
 	"description": "",
 	"main": "src/index.js",
 	"license": "GPL-2.0-or-later",
@@ -30,12 +30,12 @@
 	"keywords": [],
 	"author": "",
 	"devDependencies": {
-		"@wordpress/env": "^10.14.0",
-		"@wordpress/icons": "^10.14.0",
-		"@wordpress/scripts": "^30.7.0"
+		"@wordpress/env": "^10.35.0",
+		"@wordpress/icons": "^11.2.0",
+		"@wordpress/scripts": "^31.0.0"
 	},
 	"dependencies": {
-		"@wordpress/i18n": "^5.14.0",
-		"@wordpress/server-side-render": "^5.14.0"
+		"@wordpress/i18n": "^6.8.0",
+		"@wordpress/server-side-render": "^6.11.0"
 	}
 }

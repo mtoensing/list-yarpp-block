@@ -23,14 +23,18 @@
 }
 
 .wp-block-latest-posts.is-grid li {
-	margin: 0 1.25em 1.25em 0;
-	width: 100%;
+	margin: 0 0 2em 0;
 }
 
 @media (min-width: 600px) {
 
 	.wp-block-latest-posts.columns-2 li {
 		width: calc(50% - 0.625em);
+	}
+
+	.wp-block-latest-posts.is-grid li {
+		margin: 0 1em 1.25em 0;
+		width: 100%;
 	}
 
 	.wp-block-latest-posts.columns-2 li:nth-child(2n) {

@@ -4,9 +4,9 @@
  * Plugin Name: List YARPP Block
  * Plugin URI: https://marc.tv/
  * Description: YARPP Block 
- * Version: 2.4
+ * Version: 2.5
  * Author: Marc Tönsing
- * Author URI: https://marc.tv
+ * Author URI: https://toensing.com
  * Text Domain: list-yarpp-block
  * Domain Path: /languages
  * License: GPL v2 or later
