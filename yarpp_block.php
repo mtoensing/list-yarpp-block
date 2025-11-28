@@ -4,7 +4,7 @@
  * Plugin Name: List YARPP Block
  * Plugin URI: https://marc.tv/
  * Description: YARPP Block 
- * Version: 2.5
+ * Version: 2.6
  * Author: Marc Tönsing
  * Author URI: https://toensing.com
  * Text Domain: list-yarpp-block
@@ -46,7 +46,7 @@ function getBlocks($attributes)
 {
 
   $blocktype = $attributes['blocktype'];
-  $align = $attributes['align'];
+  $align = isset( $attributes['align'] ) ? $attributes['align'] : '';
   $headline = $attributes['headline'];
   $level = $attributes['level'];
 
@@ -159,8 +159,13 @@ function render_listitem($pid, $attributes)
 
   $title = get_the_title($pid);
   $img = get_the_post_thumbnail( $pid, array( $attributes['imgsize'], 0) );
-  $html .= '<div class="wp-block-latest-posts__featured-image"><a href="' . $url .'"'. $params . '>' . $img . '</a></div>';
-  $html .= '<'.$tag.' href="' . $url .'"'.  $params . '>' . $title . '</'.$tag.'>';
+  if ( $is_backend ) {
+    $html .= '<div class="wp-block-latest-posts__featured-image">' . $img . '</div>';
+    $html .= '<span>' . esc_html( $title ) . '</span>';
+  } else {
+    $html .= '<div class="wp-block-latest-posts__featured-image"><a href="' . esc_url( $url ) . '"' . $params . '>' . $img . '</a></div>';
+    $html .= '<a href="' . esc_url( $url ) . '"' . $params . '>' . esc_html( $title ) . '</a>';
+  }
   $html .= '</li>';
 
   return $html;

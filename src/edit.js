@@ -27,7 +27,9 @@ export default function Edit( { attributes, setAttributes } ) {
 	}
 
 	function updateImagesize( newValue ) {
-		setAttributes( { imgsize: parseInt( newValue ) } );
+		setAttributes( {
+			imgsize: newValue === '' ? 0 : parseInt( newValue, 10 ),
+		} );
 	}
 
 	return (
@@ -118,9 +120,7 @@ export default function Edit( { attributes, setAttributes } ) {
 								},
 							] }
 							onChange={ ( blocktype ) =>
-								setAttributes( {
-									blocktype,
-								} )
+								setAttributes( { blocktype } )
 							}
 						/>
 						<ToggleControl
@@ -145,7 +145,6 @@ export default function Edit( { attributes, setAttributes } ) {
 			<BlockControls>
 				<ToolbarGroup>
 					<ToolbarButton
-						className="components-icon-button components-toolbar__control"
 						label={ __( 'Update YARPP Block', 'list-yarpp-block' ) }
 						onClick={ () =>
 							setAttributes( { updated: Date.now() } )

@@ -3,8 +3,8 @@ Contributors: MarcDK
 Tags: Gutenberg, block, yarpp, full-site-editing, related posts
 Requires at least: 5.9
 Donate link: https://marc.tv/out/donate
-Tested up to: 6.8
-Stable tag: 2.5
+Tested up to: 6.9
+Stable tag: 2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,11 @@ This block **requires** the [YARPP plugin](https://wordpress.org/plugins/yet-ano
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 2.6 = 
+Added: Tested compatibility with WordPress 6.9
+Added: Migration to block api V3.
+Fix: Links in the block UX are disabled.
 
 = 2.5 = 
 Fix: Width of images is now 100% within the padding limits.
