@@ -65,4 +65,4 @@ Fix: image width won't be saved.
 == Screenshots ==
 1. List YARPP block in Gutenberg editor.
 2. List YARPP block in the Theme Twenty-Twenty-Two
-3. List YARPP block supports custom width.
+3. List YARPP block supports custom width. 
