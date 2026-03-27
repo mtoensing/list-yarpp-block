@@ -4,7 +4,7 @@ Tags: Gutenberg, block, yarpp, full-site-editing, related posts
 Requires at least: 5.9
 Donate link: https://marc.tv/out/donate
 Tested up to: 6.9
-Stable tag: 2.6
+Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,13 @@ This block **requires** the [YARPP plugin](https://wordpress.org/plugins/yet-ano
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 2.7 =
+Added: Frontend block output caching with automatic invalidation on content changes.
+Improved: Faster latest-post queries through leaner ID-only lookups and cache priming.
+Improved: GitHub Actions now use dependency caching for lint, build and deployment.
+Fix: Renderer sanitizes stored block attributes before generating markup.
+Fix: Latest mode works independently from missing or insufficient YARPP related posts.
 
 = 2.6 = 
 Added: Tested compatibility with WordPress 6.9
