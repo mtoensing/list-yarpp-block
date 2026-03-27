@@ -6,7 +6,7 @@
 	"license": "GPL-2.0-or-later",
 	"files": [
 		"build",
-		"plugin.php",
+		"yarpp_block.php",
 		"assets",
 		"*.php"
 	],

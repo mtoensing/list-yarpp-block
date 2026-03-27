@@ -26,7 +26,7 @@ This block **requires** the [YARPP plugin](https://wordpress.org/plugins/yet-ano
 
 == Installation ==
 
-1. Upload the plugin files to the `/wp-content/plugins/game-review` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/list-yarpp-block` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
