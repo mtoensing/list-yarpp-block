@@ -35,6 +35,8 @@
 		"@wordpress/scripts": "^31.7.0"
 	},
 	"dependencies": {
+		"@wordpress/blocks": "^15.15.0",
+		"@wordpress/components": "^32.4.0",
 		"@wordpress/i18n": "^6.15.0",
 		"@wordpress/server-side-render": "^6.18.0"
 	}
